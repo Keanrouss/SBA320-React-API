@@ -37,7 +37,9 @@ h1 {
   line-height: 1.1;
   color: #525277;
 }
-
+h3{
+  color: #ebe9e9;
+}
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -58,10 +60,10 @@ button {
   font-weight: 500;
   font-family: inherit;
   background-color: #ebe9e9;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: border-color 0.25s;
   margin-left: 10px;
-  color: #eee9e9;
+  /* color: #eee9e9; */
 }
 button:hover {
   border-color: #646cff;

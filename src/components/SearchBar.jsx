@@ -25,10 +25,10 @@ const SearchBar = ({handleWeather}) => {
         className='input'
         placeholder='Enter a city name'
         ref={inputRef}
-      ></input>
-      <button type='button' onClick={handleSearch}>
+      />
+       <button type='button' onClick={handleSearch}> 
         Search
-      </button>
+      </button> 
     </form>
   );
 };
