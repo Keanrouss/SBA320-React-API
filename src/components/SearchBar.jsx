@@ -13,7 +13,7 @@ function SearchBar(){
             <input
             type ="text"
             className="input"
-            placeHolder = "Enter a city name">
+            placeholder = "Enter a city name">
             </input>
             <button type="Submit">Search</button>
         </form>
