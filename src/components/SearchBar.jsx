@@ -12,7 +12,7 @@ const SearchBar = ({handleWeather}) => {
       );
       const weather = await data.json();
       handleWeather(weather)
-      console.log('Weather ', weather);
+      //console.log('Weather ', weather);
     } catch (error) {
       console.error('Error: ', error);
     }

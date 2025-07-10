@@ -1,26 +1,36 @@
-import React ,{ useState } from "react";
-import SearchBar from "../components/SearchBar";
-import Header from "../components/Header";
-import { Link, useNavigate } from "react-router-dom";
+import React, { useState } from 'react';
+import Header from '../components/Header';
+import SearchBar from '../components/SearchBar';
+import { Link } from 'react-router-dom';
 
 function Home() {
-    const [weather, setweather] = useState(null)
-    const navigate = useNavigate();
-    //console.log('Navigate Hook', navigate)
+  const [weather, setWeather] = useState(null);
 
-    const handleNavigate= () => {;
-    navigate('ten-day');
-    }
-    return (
-         <div>
-            <h1> Welcome Weather </h1>
-            <SearchBar handleWeather={setweather} />
-            <div>{weather ? <Header weather={weather}/> : 'No data Available'}
-            </div>
+  return (
+    <>
+      <div>
+        <h1>Welcome Weather</h1>
+        <SearchBar handleWeather={setWeather} />
+      </div>
+      <div>
+        {weather ? (
+          <>
+            <Header weather={weather} />
             <div>
-                <Link onClick={handleNavigate}>10 Day Forecast</Link>
+              <Link
+                to='five-day'
+                state={{ cityId: weather && weather.id ? weather.id : null }}
+              >
+                Five Day Forcast
+              </Link>
             </div>
-            </div>
-    )
+          </>
+        ) : (
+          'No Data Available'
+        )}
+      </div>
+    </>
+  );
 }
+
 export default Home;
