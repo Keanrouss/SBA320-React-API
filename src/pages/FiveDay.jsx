@@ -34,7 +34,7 @@ const FiveDay=() => {
     };
 
     getFiveDay();
-  }, [location.state.cityId]);
+  }, [location.state.cityId]);// dependencies inside array for useeffect. Allow react to re-run everytime information inside array change. Look for changes.
   return (
     <>
       <h2>Five Day Forecast</h2>
