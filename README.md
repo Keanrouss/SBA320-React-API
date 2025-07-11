@@ -1,5 +1,7 @@
 # React + Vite
 
+This wwebsite is a weather app that display weather in real-live upon request. And will generate weather, then a 5 day upcoming forecast.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
