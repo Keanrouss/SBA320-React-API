@@ -60,9 +60,9 @@ const FiveDay = () => {
             key={index}
             style={{
               marginBottom: "1rem",
-              padding: "1rem",
+              padding: "0",
               border: "1px solid #ccc",
-              borderRadius: "8px",
+              borderRadius: "10px",
             }}
           >
             <strong>{new Date(item.dt_txt).toLocaleDateString()}</strong>
@@ -74,6 +74,7 @@ const FiveDay = () => {
           </li>
         ))}
       </ul>
+      
     </>
   );
 };
