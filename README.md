@@ -2,7 +2,7 @@
 
 This website is a weather app that display weather in real-live upon request. And will generate weather, then a 5 day upcoming forecast.
 
-Netlify URL:
+Netlify URL: sba320-weather.netlify.app
 
 
 
