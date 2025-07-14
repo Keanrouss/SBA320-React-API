@@ -6,7 +6,7 @@ const SearchBar = ({handleWeather}) => {
   const handleSearch = async () => {
     try {
       const data = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${inputRef.current.value}&units=imperial&appid=${
+        `https://api.openweathermap.org/data/2.5/weather?q=${inputRef.current.value}&units=imperial&apid=${
           import.meta.env.VITE_API_KEY
         }`
       );

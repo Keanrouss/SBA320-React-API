@@ -14,7 +14,8 @@ const FiveDay = () => {
       try {
         if (location.state.cityId !== null) { //function that access info based of city ID to obtain 5 days forecast
           const response = await fetch(
-            `https://api.openweathermap.org/data/2.5/forecast?id=${location.state.cityId}&units=imperial&appid=${import.meta.env.VITE_API_KEY}`
+            `https://api.openweathermap.org/data/2.5/forecast?id=${location.state.cityId}&units=imperial&ap
+            id=${import.meta.env.VITE_API_KEY}`
           );
           const fiveDayData = await response.json();
 
